@@ -15,7 +15,7 @@
                 <input type="number" id="base-salary" placeholder="Enter your base salary" disabled>
             </div>
             <div class="input-group">
-                <label for="hike-percentage">Percentage of Hike:</label>
+                <label for="hike-percentage">% of Hike:</label>
                 <input type="number" id="hike-percentage" placeholder="Enter hike percentage" disabled>
             </div>
             <div class="input-group">
@@ -24,17 +24,19 @@
             </div>
             <div class="input-group">
                 <label>Calculate:</label>
-                <div>
-                    <input type="radio" name="calculate" id="calculate-new-salary" value="new-salary" onclick="selectCalculation('new-salary')" checked>
-                    <label for="calculate-new-salary">New Salary</label>
-                </div>
-                <div>
-                    <input type="radio" name="calculate" id="calculate-base-salary" value="base-salary" onclick="selectCalculation('base-salary')">
-                    <label for="calculate-base-salary">Base Salary</label>
-                </div>
-                <div>
-                    <input type="radio" name="calculate" id="calculate-hike-percentage" value="hike-percentage" onclick="selectCalculation('hike-percentage')">
-                    <label for="calculate-hike-percentage">Hike Percentage</label>
+                <div class="radio-group">
+                    <div>
+                        <input type="radio" name="calculate" id="calculate-new-salary" value="new-salary" onclick="selectCalculation('new-salary')" checked>
+                        <label for="calculate-new-salary">New Salary</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="calculate" id="calculate-base-salary" value="base-salary" onclick="selectCalculation('base-salary')">
+                        <label for="calculate-base-salary">Base Salary</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="calculate" id="calculate-hike-percentage" value="hike-percentage" onclick="selectCalculation('hike-percentage')">
+                        <label for="calculate-hike-percentage">Hike Percentage</label>
+                    </div>
                 </div>
             </div>
             <div class="button-container">
@@ -47,3 +49,4 @@
     <script src="hike.js"></script>
 </body>
 </html>
+
