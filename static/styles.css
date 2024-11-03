@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: left; /* Align text to the left */
+    margin: 0;
+    padding: 20px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: flex-start; /* Left align buttons */
+}
+
+.big-button {
+    font-size: 20px; /* Adjust size as needed */
+    padding: 15px; /* Uniform padding for buttons */
+    margin: 10px 0; /* Space between buttons */
+    width: 200px; /* Set a fixed width for uniformity */
+    cursor: pointer;
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    transition: background-color 0.3s; /* Smooth background change */
+}
+
+.big-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
