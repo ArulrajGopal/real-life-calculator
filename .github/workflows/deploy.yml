@@ -16,7 +16,7 @@ jobs:
         run: echo "${{ secrets.AZURE_ACR_PASSWORD }}" | docker login ${{ secrets.AZURE_ACR_NAME }} -u ${{ secrets.AZURE_ACR_USERNAME }} --password-stdin
 
       - name: Build Docker image
-        run: docker build -t ${{ secrets.AZURE_ACR_NAME }}/my-app:latest .
+        run: docker build -t ${{ secrets.AZURE_ACR_NAME }}/real-life-calculator:latest .
 
       - name: Push Docker image to ACR
-        run: docker push ${{ secrets.AZURE_ACR_NAME }}/my-app:latest
+        run: docker push ${{ secrets.AZURE_ACR_NAME }}/real-life-calculator:latest
