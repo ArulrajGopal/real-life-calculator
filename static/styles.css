@@ -27,3 +27,25 @@ body {
 .big-button:hover {
     background-color: #45a049; /* Darker green on hover */
 }
+
+
+.input-group {
+    margin-bottom: 20px; /* Space between each input group */
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Center items vertically */
+}
+
+.input-group label {
+    margin-right: 10px; /* Space between label and input */
+    width: 150px; /* Fixed width for labels to align inputs consistently */
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Left align all inputs */
+}
+
+.button-container {
+    margin-top: 20px; /* Add space above the button */
+}
