@@ -101,7 +101,7 @@ function calculateSIP() {
             const monthlyInterestRate = (expectedReturn / 100) / 12;
 
             // Calculate the investment duration in months
-            const calculatedDuration = (Math.log(6.04)/Math.log(1+monthlyInterestRate))/12
+            const calculatedDuration = (Math.log(futureValue*monthlyInterestRate/monthlyInvestment+1)/Math.log(1+monthlyInterestRate))/12
             result = `Investment Duration: ${(calculatedDuration).toFixed(2)} years`;
         }
     }
